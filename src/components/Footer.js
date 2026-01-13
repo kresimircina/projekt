@@ -1,4 +1,4 @@
-import "./App.css"
+
 
 const Footer = () => {
   return (
@@ -12,28 +12,28 @@ const Footer = () => {
                 <h4>Explorer</h4>
                   <ul>
                     <li>
-                      <a href="#">Electric bikes</a>
+                      <a href="#!">Electric bikes</a>
                     </li>
                     <li>
-                      <a href="#">City bikes</a>
+                      <a href="#!">City bikes</a>
                     </li>
                     <li>
-                      <a href="#">Kids bikes</a>
+                      <a href="#!">Kids bikes</a>
                     </li>
                     <li>
-                      <a href="#">Accesories</a>
+                      <a href="#!">Accesories</a>
                     </li>
                     <li>
-                      <a href="#">Outlet</a>
+                      <a href="#!">Outlet</a>
                     </li>
                     <li>
-                      <a href="#">Business</a>
+                      <a href="#!">Business</a>
                     </li>
                     <li>
-                      <a href="#">Insurance Electric</a>
+                      <a href="#!">Insurance Electric</a>
                     </li>
                     <li>
-                      <a href="#">Size guide</a>
+                      <a href="#!">Size guide</a>
                     </li>
                   </ul>
                 
@@ -42,19 +42,19 @@ const Footer = () => {
                 <h4>About</h4>
                   <ul>
                     <li>
-                      <a href="#">About us</a>
+                      <a href="#!">About us</a>
                     </li>
                     <li>
-                      <a href="#">Journal</a>
+                      <a href="#!">Journal</a>
                     </li>
                     <li>
-                      <a href="#">Reviews</a>
+                      <a href="#!">Reviews</a>
                     </li>
                     <li>
-                      <a href="#">Press</a>
+                      <a href="#!">Press</a>
                     </li>
                     <li>
-                      <a href="#">Jobs</a>
+                      <a href="#!">Jobs</a>
                     </li>
                   </ul>
 
@@ -63,25 +63,25 @@ const Footer = () => {
                 <h4>Help</h4>
                   <ul>
                     <li>
-                      <a href="#">Contact</a>
+                      <a href="#!">Contact</a>
                     </li>
                     <li>
-                      <a href="#">FAQ</a>
+                      <a href="#!">FAQ</a>
                     </li>
                     <li>
-                      <a href="#">Delivery</a>
+                      <a href="#!">Delivery</a>
                     </li>
                     <li>
-                      <a href="#">Assembly & manuals</a>
+                      <a href="#!">Assembly & manuals</a>
                     </li>
                     <li>
-                      <a href="#">Payment options</a>
+                      <a href="#!">Payment options</a>
                     </li>
                     <li>
-                      <a href="#">Privacy policy</a>
+                      <a href="#!">Privacy policy</a>
                     </li>
                     <li>
-                      <a href="#">Terms & conditions</a>
+                      <a href="#!">Terms & conditions</a>
                     </li>
                   </ul>
 
@@ -101,7 +101,7 @@ const Footer = () => {
                   <button type="button" className="btn btn-outline-dark">Subscribe</button>
 
                 <p>
-                  <input type="checkbox"  name="" value="I agree"/>By signing up, I agree to the <a href="#">privacy policy</a> of Veloretti.
+                  <input type="checkbox"  name="" value="I agree"/>By signing up, I agree to the <a href="#!">privacy policy</a> of Veloretti.
                 </p>
               </form>
             </div>

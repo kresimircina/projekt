@@ -1,9 +1,9 @@
-import React from 'react'
+
 
 const Nav = () => {
   return (
     <>
-      <nav classNameName="navbar navbar-expand-lg navbar-light bg-ligh">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
         <a className="navbar-brand" href="/index.html">
           <img src="./slike/logo.svg" alt="logo" height="12"/> 
@@ -19,40 +19,40 @@ const Nav = () => {
       
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item dropdown text-end">
-              <a className="nav-link dropdown-toggle" href="#" id="ddElectric" role="button" data-bs-toggle="dropdown" aria-expanded="false">ELECTRIC</a>
+              <a className="nav-link dropdown-toggle" href="#!" id="ddElectric" role="button" data-bs-toggle="dropdown" aria-expanded="false">ELECTRIC</a>
                 <ul className="dropdown-menu" aria-labelledby="ddElectric">
                   <li><a className="dropdown-item text-end" href="./products.html">Electric Ace</a></li>
                   <li><a className="dropdown-item text-end" href="./products.html">Electric Ivy</a></li>
                 </ul>
             </li>
             <li className="nav-item dropdown text-end">
-              <a className="nav-link dropdown-toggle" href="#" id="ddElectric" role="button" data-bs-toggle="dropdown" aria-expanded="false">CITY</a>
+              <a className="nav-link dropdown-toggle" href="#!" id="ddElectric" role="button" data-bs-toggle="dropdown" aria-expanded="false">CITY</a>
                 <ul className="dropdown-menu" aria-labelledby="ddElectric">
-                  <li><a className="dropdown-item text-end" href="#">Caféracer</a></li>
-                  <li><a className="dropdown-item text-end" href="#">Robyn</a></li>
+                  <li><a className="dropdown-item text-end" href="#!">Caféracer</a></li>
+                  <li><a className="dropdown-item text-end" href="#!">Robyn</a></li>
                 </ul>
               </li>
             <li className="nav-item dropdown text-end">
-              <a className="nav-link dropdown-toggle" href="#" id="ddElectric" role="button" data-bs-toggle="dropdown" aria-expanded="false">KIDS</a>
+              <a className="nav-link dropdown-toggle" href="#!" id="ddElectric" role="button" data-bs-toggle="dropdown" aria-expanded="false">KIDS</a>
                 <ul className="dropdown-menu" aria-labelledby="ddElectric">
-                  <li><a className="dropdown-item text-end" href="#">El Bear</a>
+                  <li><a className="dropdown-item text-end" href="#!">El Bear</a>
                   </li>
-                  <li><a className="dropdown-item text-end" href="#">El Robin</a>
+                  <li><a className="dropdown-item text-end" href="#!">El Robin</a>
                   </li>
                 </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-end" href="#">ACCESSORIES</a>
+              <a className="nav-link text-end" href="#!">ACCESSORIES</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-end" href="#">STORES</a>
+              <a className="nav-link text-end" href="#!">STORES</a>
             </li>
             <li className="nav-item dropdown text-end">
-              <a className="nav-link dropdown-toggle" href="#" id="ddElectric" role="button" data-bs-toggle="dropdown" aria-expanded="false">LEASING</a>
+              <a className="nav-link dropdown-toggle" href="#!" id="ddElectric" role="button" data-bs-toggle="dropdown" aria-expanded="false">LEASING</a>
                 <ul className="dropdown-menu" aria-labelledby="ddElectric">
-                  <li><a className="dropdown-item text-end" href="#">Private</a>
+                  <li><a className="dropdown-item text-end" href="#!">Private</a>
                   </li>
-                  <li><a className="dropdown-item text-end" href="#">Business</a>
+                  <li><a className="dropdown-item text-end" href="#!">Business</a>
                   </li>
                 </ul>
             </li>
