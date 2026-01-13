@@ -1,5 +1,5 @@
-import Footer from "./components/Footer.js"
-import Nav from "./components/Nav.js"
+import Footer from "..components/Footer.js"
+import Nav from "../components/Nav.js"
 
 
 const Home = () => {
@@ -300,7 +300,7 @@ const Home = () => {
       </div>
     </section>
 
-<Footer />
+    <Footer />
     
     </>
   )
