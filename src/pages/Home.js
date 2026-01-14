@@ -141,16 +141,18 @@ const Home = () => {
               <div className="slider align-items-center">
                 <img src="img/bikeace.png" alt="Bike"/>
               </div>
-              <div className="options-row mb-5">
-                <a href="#!" className="btn buy-now border-black bg-white">Buy now</a>
-                <a href="#!" className="learn-more">Learn more</a>
-                <span className="colorbtn-active"><button type="button" className="btn btn-crn"></button>
-                </span>
-                <span className="colorbtn"><button type="button" className="btn-siv"></button></span>
-                <span className="colorbtn"><button type="button" className="btn-bez"></button></span>
-                <span className="colorbtn"><button type="button" className="btn-mix"></button></span>
-                
-
+              <div className="options-row mb-2 d-flex align-items-end ms-3">
+                  <div className="action pb-0">
+                    <a href="#!" className="btn buy-now border-black bg-white">Buy now</a>
+                    <a href="#!" className="learn-more">Learn more</a>
+                  </div>
+                  <div className="choice">
+                    <span className="colorbtn-active"><button type="button" className="btn btn-crn"><img src="img/btn1.svg" alt="btn1"/></button>
+                    </span>
+                    <span className="colorbtn"><button type="button" className="btn-siv"><img src="img/btn2.svg" alt="btn2"/></button></span>
+                    <span className="colorbtn"><button type="button" className="btn-bez"><img src="img/btn3.svg" alt="btn3"/></button></span>
+                    <span className="colorbtn"><button type="button" className="btn-mix"><img src="img/btn4.svg" alt="btn4"/></button></span>
+                  </div>
               </div>
             </div>
           </div>
@@ -164,14 +166,18 @@ const Home = () => {
               <div className="slider">
                 <img src="img/bikeivy.png" alt="Bike"/>
               </div>
-              <div className="options-row mb-5">
-                <a href="#!" className="btn buy-now border-black bg-white">Buy now</a>
-                <a href="#!" className="learn-more">Learn more</a>
-                <span className="colorbtn-active"><button type="button" className="btn btn-crn"></button>
-                </span>
-                <span className="colorbtn"><button type="button" className="btn-siv"></button></span>
-                <span className="colorbtn"><button type="button" className="btn-bez"></button></span>
-                <span className="colorbtn"><button type="button" className="btn-mix"></button></span>
+              <div className="options-row mb-2 d-flex align-items-end ms-3">
+                  <div className="action pb-0">
+                    <a href="#!" className="btn buy-now border-black bg-white">Buy now</a>
+                    <a href="#!" className="learn-more">Learn more</a>
+                  </div>
+                  <div className="choice">
+                    <span className="colorbtn-active"><button type="button" className="btn btn-crn"><img src="img/btn1.svg" alt="btn1"/></button>
+                    </span>
+                    <span className="colorbtn"><button type="button" className="btn-siv"><img src="img/btn2.svg" alt="btn2"/></button></span>
+                    <span className="colorbtn"><button type="button" className="btn-bez"><img src="img/btn3.svg" alt="btn3"/></button></span>
+                    <span className="colorbtn"><button type="button" className="btn-mix"><img src="img/btn4.svg" alt="btn4"/></button></span>
+                  </div>
               </div>
             </div>
           </div>
