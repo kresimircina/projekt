@@ -92,7 +92,7 @@ const Footer = () => {
            
           
           </div>
-          <div classNameName="col-md-4">
+          <div className="col-md-4">
             <h4>Join the ride.</h4>
             <div className="subscribe d-flex align-items-end">
               <form>

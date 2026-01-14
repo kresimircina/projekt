@@ -6,7 +6,7 @@ const Nav = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
         <a className="navbar-brand" href="/index.html">
-          <img src="./slike/logo.svg" alt="logo" height="12"/> 
+          <img src="./img/logo.svg" alt="logo" height="12"/> 
         </a>
     
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -61,12 +61,12 @@ const Nav = () => {
           <ul className="navbar-nav ms-auto align-items-center">
             <li className="nav-item">
               <a className="nav-link" href="/signin" title="Sign in">
-                <img src="./slike/acc-wrap.svg" alt="Sign in" className="icon-sm"/>
+                <img src="./img/acc-wrap.svg" alt="Sign in" className="icon-sm"/>
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/cart" title="Cart">
-                <img src="./slike/cart-wrap.svg" alt="Cart" className="icon-lg "/>
+                <img src="./img/cart-wrap.svg" alt="Cart" className="icon-lg "/>
               </a>
             </li>
           </ul>

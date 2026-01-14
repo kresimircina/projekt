@@ -1,5 +1,5 @@
 
-import Home from './pages/Products';
+import Home from './pages/Home';
 import './App.css';
 
 
