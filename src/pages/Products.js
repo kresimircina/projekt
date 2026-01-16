@@ -1,12 +1,9 @@
-import Footer from "../components/Footer.js"
-import Nav from "../components/Nav.js"
+
 
 
 const Products = () => {
   return (
     <>
-
-    <Nav />
 
       <section className="hero hero-products d-flex align-items-center text-white mb-5">
       <div className="container">
@@ -299,8 +296,6 @@ const Products = () => {
         </div>
       </div>
     </section>
-
-    <Footer />
     
     </>
   )

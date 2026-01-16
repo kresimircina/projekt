@@ -1,11 +1,9 @@
 
-import Nav from '../components/Nav'
-import Footer from '../components/Footer'
+
 
 const Home = () => {
   return (
     <>
-      <Nav />
 
         <section className="hero d-flex align-items-center text-white mb-5">
       <div className="container">
@@ -275,7 +273,6 @@ const Home = () => {
       </div>
     </section>
 
-      <Footer />
     </>
   )
 }
