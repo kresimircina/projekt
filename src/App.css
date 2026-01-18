@@ -31,7 +31,7 @@ a {
     min-height: 100vh;
 }
 
-.hero .hero-products {
+.hero-products {
     background-image: url("./img/hero-products.png");
 }
 
