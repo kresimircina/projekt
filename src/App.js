@@ -10,6 +10,7 @@ import Products from "./pages/Products";
 
 import Profil from "./components/zadaci/Profil";
 import Korisnici from "./components/zadaci/Korisnici"
+import Vjezba from "./components/zadaci/Vjezba"
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
 
 
         <Route path="/profil" element={<Profil />} />
-        <Route path="/korisnici" element={<Korisnici />} />
+        <Route path="/korisnici"element={<Korisnici />} /> 
+        <Route path="/vjezba"element={<Vjezba />} />
       </Routes>
       <Footer />
       </BrowserRouter>

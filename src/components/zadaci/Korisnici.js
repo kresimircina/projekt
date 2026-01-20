@@ -1,37 +1,53 @@
-import korisnici from "./data/korisnici.json"
+import korisnici from "./data/korisnici.json";
 
 const Korisnici = () => {
+    
+
     return (
         <div className="container">
             <h2>Popis korisnika</h2>
-            <table class="table">
+            <table className="table mt-3 mb-5">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
+                        <th scope="col">Korisnik</th>
+                        <th scope="col">Nadimak</th>
+                        <th scope="col">E-mail adresa</th>
+                        <th scope="col">Telefon</th>
+                        <th scope="col">Web stranica</th>
+                        <th scope="col">Tvrtka</th>
+                        <th scope="col">Adresa</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                         <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                            <td>John</td>
-                            <td>Doe</td>
-                            <td>@social</td>
-                    </tr>
+                    
+                        {
+                             korisnici.map((korisnik) => (
+                                <tr>
+                                    <td>{korisnik.id}</td>
+                                    <td>{korisnik.name}</td>
+                                    <td>{korisnik.username}</td>
+                                    <td>{korisnik.email}</td>
+                                    <td>{korisnik.phone}</td>
+                                    <td>{korisnik.website}</td>
+                                    <td>
+                                        <p>{korisnik.company.name}</p>
+                                        <p>{korisnik.company.catchPhrase}</p>
+                                        <p>{korisnik.company.bs}</p>
+                                    </td>
+                                    <td>
+                                        <p>{korisnik.address.street}</p>
+                                        <p>{korisnik.address.suite}</p>
+                                        <p>{korisnik.address.city}</p>
+                                    </td>
+                                </tr>   
+                            )
+                        )
+                            
+                        }
+
+                           
+                    
                 </tbody>
             </table>
         </div>
@@ -65,4 +81,4 @@ const Korisnici = () => {
 
 
 
-export default Korisnici
+export default Korisnici;

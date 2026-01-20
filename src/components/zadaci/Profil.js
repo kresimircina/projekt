@@ -29,9 +29,9 @@ const Profil = () => {
 
     //ovo je JSON format,tekstualni (string) oblik
 
-    const KorisnikJSON = '{"ime" : "Krešimir", "prezime" : "Rušnov", "godine" : 41, "vozacka" : true, "vjestine" : [ "HTML", "CSS", "Javascript", "React" ], "adresa" : { "ulica" : "Sotinačka 31", "grad" : "Berak", "pbroj" : 32242}'
+    const KorisnikJSON = '{"ime" : "Krešimir", "prezime" : "Rušnov", "godine" : 41, "vozacka" : true, "vjestine" : [ "HTML", "CSS", "Javascript", "React" ], "adresa" : { "ulica" : "Sotinačka 31", "grad" : "Berak", "pbroj" : 32242}}'
         //pomoću JSON.parse() ga pretvara u Javascript objekt
-    const Korisnik = JSON.parse(KorisnikJSON)
+    const Korisnik = JSON.parse(KorisnikJSON);
         
    
 
@@ -41,7 +41,7 @@ const Profil = () => {
     return (
         <div className="container">
 
-            {console.log (Korisnik)}
+            {KorisnikObjekt.adresa.drzava.valuta}
             
             <h1>Profil korisnika</h1>
             <p>Ime: {Korisnik.ime}</p>
@@ -61,7 +61,7 @@ const Profil = () => {
                         Korisnik.vjestine.map (
                             (vjestina, index) => (
 
-                                <li>{index+1}.{vjestina}</li>
+                                <li>{index+1}. {vjestina}</li>
 
                             )
                         )
@@ -76,4 +76,4 @@ const Profil = () => {
 
 };
 
-export default Profil
+export default Profil;
