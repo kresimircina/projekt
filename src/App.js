@@ -5,12 +5,13 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Home from './pages/Home';
 import Blog from './pages/Blog';
-import Blogsingle from "./pages/Blogsingle";
+import BlogSingle from "./pages/BlogSingle";
 import Products from "./pages/Products";
 
 import Profil from "./components/zadaci/Profil";
 import Korisnici from "./components/zadaci/Korisnici"
 import Vjezba from "./components/zadaci/Vjezba"
+import Tecaj from "./components/zadaci/Tecaj"
 
 function App() {
   return (
@@ -21,13 +22,14 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/blogsingle" element={<Blogsingle />} />
+        <Route path="/blogsingle" element={<BlogSingle />} />
 
 
 
         <Route path="/profil" element={<Profil />} />
         <Route path="/korisnici"element={<Korisnici />} /> 
         <Route path="/vjezba"element={<Vjezba />} />
+        <Route path="/tecaj"element={<Tecaj />} />
       </Routes>
       <Footer />
       </BrowserRouter>
