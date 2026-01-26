@@ -24,20 +24,20 @@ a {
 
 
 .hero {
-    /* background-image: ; */
+    background-image: url("./img/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
 }
 
-.hero .hero-products {
-    /* background-image: ; */
+.hero-products {
+    background-image: url("./img/hero-products.png");
 }
 
 
 .home-2 {
-    /* background-image: ; */
+    background-image: url("./img/home-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -46,7 +46,7 @@ a {
 }
 
 .home-2-products {
-    /* background-image:; */
+    background-image: url("./img/home-2-products.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -54,7 +54,7 @@ a {
 }
 
 .home-3-products {
-    /* background-image: ; */
+    background-image: url("./img/home-3-products.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -201,9 +201,8 @@ input[type="checkbox"] {
 }
 
 
-.bike h3{
    
-}
+
 
 .bike {
     background-color: #ebedee;
@@ -212,18 +211,6 @@ input[type="checkbox"] {
     
 }
 
-.bike p{
-
-}
-
-
-.bike a{
-
-}
-
-.bike a.btn{
-
-}
 
 .options-row {
     justify-content: space-between;
@@ -245,18 +232,15 @@ input[type="checkbox"] {
 
     width: 15px;
     height: 27px;
-    /* background-image:; */
+    background-image: url("./img/arrow.svg");
     opacity: 0.5;
 }
 
 .slick-next:hover, .slick-prev:hover {
-    /* background-image: ; */
+    background-image: url("./img/arrow.svg");
     opacity: 1;
 }
 
-.slick-next:focus, .slick-prev:focus {
-    /* background-image: ; */
-}
 
 .slick-prev {
     transform: scaleX(-1);
@@ -320,7 +304,7 @@ input[type="checkbox"] {
 
 .page-header {
     padding: 150px 0;
-    /* background-image: ; */
+    background-image: url("./img/page-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
