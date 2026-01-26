@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Blog from './pages/Blog';
 import BlogSingle from "./pages/BlogSingle";
 import Products from "./pages/Products";
+import Kategorije from "./pages/Kategorije";
 
 import Profil from "./components/zadaci/Profil";
 import Korisnici from "./components/zadaci/Korisnici"
@@ -23,7 +24,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/blogsingle" element={<BlogSingle />} />
+        <Route path="/blog/:slug" element={<BlogSingle />} />
+        <Route path="/kategorije" element={<Kategorije />} />
+
 
 
 

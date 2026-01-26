@@ -1,27 +1,26 @@
 import { useState, useEffect } from 'react';
 
 import './Blog.css';
+import { useParams } from 'react-router-dom';
 
 
 const BlogSingle = () => {
-
-
+    const {slug} = useParams();
     const [post, setPost] = useState(null);
-    const [loading,setLoading] = useState(true);
-    const [page, setPage] = useState(1);
+    
 
     useEffect (
         () => {
-            fetch('https://front2.edukacija.online/backend/wp-json/wp/v2/posts/680?_embed')
+            fetch(`https://front2.edukacija.online/backend/wp-json/wp/v2/posts?slug=${slug}&_embed`)
             .then(response => response.json())
             .then(
                 (data) => {
-                    setPost(data);
+                    setPost(data[0]);
                     
                 }
             )
 
-        }, []
+        }, [slug]
     )
     
     if(!post) return <p>Učitavanje</p>
