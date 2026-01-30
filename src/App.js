@@ -6,6 +6,10 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Home from './pages/Home';
 import Blog from './pages/Blog';
+import Kontakt from './pages/Kontakt';
+import Usluge from './pages/Usluge';
+import Uslugesingle from "./pages/Uslugesingle";  
+import Onama from './pages/Onama';
 import BlogSingle from "./pages/BlogSingle";
 import Products from "./pages/Products";
 import Kategorije from "./pages/Kategorije";
@@ -24,6 +28,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/kontakt" element={<Kontakt />} />
+        <Route path="/usluge" element={<Usluge />} />
+        <Route path="/usluga/:slug" element={<Uslugesingle />} />
+        <Route path="/o-nama" element={<Onama />} />
         <Route path="/blog/:slug" element={<BlogSingle />} />
         <Route path="/kategorije" element={<Kategorije />} />
 

@@ -18,26 +18,14 @@ const Nav = () => {
         <div className="collapse navbar-collapse" id="mainNavbar">
       
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            
+            
             <li className="nav-item dropdown text-end">
-              <Link className="nav-link dropdown-toggle" to="#!" id="ddElectric" role="button" data-bs-toggle="dropdown" aria-expanded="false">ELECTRIC</ Link>
+              <Link className="nav-link dropdown-toggle" to="#!" id="ddElectric" role="button" data-bs-toggle="dropdown" aria-expanded="false">Usluge</ Link>
                 <ul className="dropdown-menu" aria-labelledby="ddElectric">
-                  <li><Link className="dropdown-item text-end" to="./products">Electric Ace</ Link></li>
-                  <li><Link className="dropdown-item text-end" to="./products">Electric Ivy</ Link></li>
-                </ul>
-            </li>
-            <li className="nav-item dropdown text-end">
-              <Link className="nav-link dropdown-toggle" to="#!" id="ddElectric" role="button" data-bs-toggle="dropdown" aria-expanded="false">CITY</ Link>
-                <ul className="dropdown-menu" aria-labelledby="ddElectric">
-                  <li><Link className="dropdown-item text-end" to="#!">Caféracer</ Link></li>
-                  <li><Link className="dropdown-item text-end" to="#!">Robyn</ Link></li>
-                </ul>
-              </li>
-            <li className="nav-item dropdown text-end">
-              <Link className="nav-link dropdown-toggle" to="#!" id="ddElectric" role="button" data-bs-toggle="dropdown" aria-expanded="false">KIDS</ Link>
-                <ul className="dropdown-menu" aria-labelledby="ddElectric">
-                  <li><Link className="dropdown-item text-end" to="#!">El Bear</Link>
+                  <li><Link className="dropdown-item text-end" to="/vjencanja">Vjenčanja</Link>
                   </li>
-                  <li><Link className="dropdown-item text-end" to="#!">El Robin</Link>
+                  <li><Link className="dropdown-item text-end" to="">Privatni eventi</Link>
                   </li>
                 </ul>
             </li>
@@ -45,7 +33,7 @@ const Nav = () => {
               <Link className="nav-link text-end" to="/kategorije">Kategorije</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-end" to="#!">STORES</Link>
+              <Link className="nav-link text-end" to="/o-nama">O nama</Link>
             </li>
             <li className="nav-item dropdown text-end">
               <Link className="nav-link dropdown-toggle" to="#!" id="ddElectric" role="button" data-bs-toggle="dropdown" aria-expanded="false">LEASING</Link>
