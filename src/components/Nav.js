@@ -35,15 +35,10 @@ const Nav = () => {
             <li className="nav-item">
               <Link className="nav-link text-end" to="/o-nama">O nama</Link>
             </li>
-            <li className="nav-item dropdown text-end">
-              <Link className="nav-link dropdown-toggle" to="#!" id="ddElectric" role="button" data-bs-toggle="dropdown" aria-expanded="false">LEASING</Link>
-                <ul className="dropdown-menu" aria-labelledby="ddElectric">
-                  <li><Link className="dropdown-item text-end" to="#!">Private</Link>
-                  </li>
-                  <li><Link className="dropdown-item text-end" to="#!">Business</Link>
-                  </li>
-                </ul>
+            <li className="nav-item">
+              <Link className="nav-link text-end" to="/kontakt">Kontakt</Link>
             </li>
+            
           </ul>
 
           <ul className="navbar-nav ms-auto align-items-center">

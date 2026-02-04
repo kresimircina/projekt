@@ -13,6 +13,7 @@ import Onama from './pages/Onama';
 import BlogSingle from "./pages/BlogSingle";
 import Products from "./pages/Products";
 import Kategorije from "./pages/Kategorije";
+import SignIn from "./pages/SignIn";
 
 import Profil from "./components/zadaci/Profil";
 import Korisnici from "./components/zadaci/Korisnici"
@@ -34,6 +35,7 @@ function App() {
         <Route path="/o-nama" element={<Onama />} />
         <Route path="/blog/:slug" element={<BlogSingle />} />
         <Route path="/kategorije" element={<Kategorije />} />
+        <Route path="/signin" element={<SignIn />} />
 
 
 

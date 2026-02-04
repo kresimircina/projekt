@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import ScrollToTop from "./ScrollToTop"
 
 const Footer = () => {
   return (
@@ -124,7 +125,7 @@ const Footer = () => {
 
           
         </div>
-       
+        <button className="btn btn-danger" onClick={ScrollToTop}>TOP</button>
       </div>
     </footer>
     </>
