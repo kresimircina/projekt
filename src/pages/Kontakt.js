@@ -38,6 +38,8 @@ const Kontakt = () => {
           Any question or remarks? Just write us a message!
         </p>
         <div className="col-md-5 contact-left">
+            <div className="circle1"></div>
+            <div className="circle2"></div>
             <div>
               <h2>Contact Information</h2>
               <p>Say something to start a live chat!</p>
@@ -60,8 +62,7 @@ const Kontakt = () => {
               <a href="www.linkedin.com"><FontAwesomeIcon icon={faLinkedin} /></a>
             </div>
             
-              <div className="krug-1"></div>
-              <div className="krug-2"></div>
+              
             
           </div>
           
@@ -69,7 +70,11 @@ const Kontakt = () => {
         <div className="col-md-7 d-flex flex-column gap-5">
           <div className="d-flex flex-column contact-inputs">
 
-            <form ref={form} onSubmit={sendEmail} className='d-flex flex-column'>
+            <form 
+              ref={form}
+              onSubmit={sendEmail} 
+              className='d-flex flex-column'
+            >
               <label>Name</label>
               <input type="text" name="user_name" className='inputform'/>
               <label>Email</label>
