@@ -14,6 +14,7 @@ import BlogSingle from "./pages/BlogSingle";
 import Products from "./pages/Products";
 import Kategorije from "./pages/Kategorije";
 import SignIn from "./pages/SignIn";
+import Register from "./pages/Register";
 
 import Profil from "./components/zadaci/Profil";
 import Korisnici from "./components/zadaci/Korisnici"
@@ -36,6 +37,8 @@ function App() {
         <Route path="/blog/:slug" element={<BlogSingle />} />
         <Route path="/kategorije" element={<Kategorije />} />
         <Route path="/signin" element={<SignIn />} />
+        <Route path="/register" element={<Register />} />
+
 
 
 
