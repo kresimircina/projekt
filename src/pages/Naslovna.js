@@ -3,28 +3,33 @@ import { useState, useEffect } from "react"
 
 const Naslovna = () => {
  
-    const [page, setPages] = useState(null);
+    const [page, setPage] = useState(null);
 
-        useEffect(
-        
-            () => {
-            fetch('https://front2.edukacija.online/backend/wp-json/wp/v2/pages/178')
-            .then(response => response.json())
-            .then(
-                (data) => {
+        useEffect(() => {
+            const fetchPage = async() => {
+                try{
+                    const response = await fetch('https://front2.edukacija.online/backend/wp-json/wp/v2/pages/178');
+                    if(!response.ok){
+                        throw new Error("Ne mogu povući podatke");
+                    }
+                    const data = await response.json();
                     setPage(data);
+                } catch(err) {
+                console.log(err.message);
+                
                 }
-            )
+            }
 
+            fetchPage();
         }, []
-    )
+    );
 
-    if(!page) return <p>Učitavanje</p>
+    if(!page) return <p>Učitavanje</p>;
 
     return (
 
-    <div dangerouslySetInnerHTML={{ __html: page.content.rendered }}></div>
-  )
-}
+    <div dangerouslySetInnerHTML={{ __html:page.content.rendered }}></div>
+  );
+};
 
 export default Naslovna

@@ -43,10 +43,11 @@ a {
 
 
 .hero {
-    background-image: url("./img/hero.jpg");
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    min-width: 100%;
     min-height: 100vh;
 }
 
@@ -355,3 +356,4 @@ input[type="checkbox"] {
     font-size: 20px;
     line-height: 1.5;
 }
+
