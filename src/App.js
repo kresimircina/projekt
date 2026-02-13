@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Blog from './pages/Blog';
 import Kontakt from './pages/Kontakt';
 import Usluge from './pages/Usluge';
+import Vjencanja from "./pages/Vjencanja";
 import Uslugesingle from "./pages/Uslugesingle";  
 import Onama from './pages/Onama';
 import BlogSingle from "./pages/BlogSingle";
@@ -15,12 +16,13 @@ import Products from "./pages/Products";
 import Kategorije from "./pages/Kategorije";
 import SignIn from "./pages/SignIn";
 import Register from "./pages/Register";
+import Testnastranica from "./pages/Testnastranica";
 
 import Profil from "./components/zadaci/Profil";
 import Korisnici from "./components/zadaci/Korisnici"
 import Vjezba from "./components/zadaci/Vjezba"
 import Tecaj from "./components/zadaci/Tecaj"
-
+                   
 function App() {
   return (
     <>
@@ -32,7 +34,9 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/kontakt" element={<Kontakt />} />
         <Route path="/usluge" element={<Usluge />} />
-        <Route path="/usluga/:slug" element={<Uslugesingle />} />
+        <Route path="/testnastranica" element={<Testnastranica />} />
+       
+        <Route path="/usluga/:slug" element={<Vjencanja />} />
         <Route path="/o-nama" element={<Onama />} />
         <Route path="/blog/:slug" element={<BlogSingle />} />
         <Route path="/kategorije" element={<Kategorije />} />

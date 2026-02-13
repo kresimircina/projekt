@@ -1,21 +1,19 @@
 import { useState, useEffect } from "react"
-import { useParams } from 'react-router-dom';
 
 
-const Vjencanja = () => {
+const Testnastranica = () => {
  
-    const {slug} = useParams();
     const [page, setPage] = useState(null);
 
         useEffect(() => {
             const fetchPage = async() => {
                 try{
-                    const response = await fetch(`https://front2.edukacija.online/backend/wp-json/wp/v2/eventi?slug=${slug}&_embed`);
+                    const response = await fetch('https://front2.edukacija.online/backend/wp-json/wp/v2/pages/1667');
                     if(!response.ok){
                         throw new Error("Ne mogu povući podatke");
                     }
                     const data = await response.json();
-                    setPage(data[0]);
+                    setPage(data);
                 } catch(err) {
                 console.log(err.message);
                 
@@ -23,7 +21,7 @@ const Vjencanja = () => {
             }
 
             fetchPage();
-        }, [slug]
+        }, []
     );
 
     if(!page) return <p>Učitavanje</p>;
@@ -34,4 +32,4 @@ const Vjencanja = () => {
   );
 };
 
-export default Vjencanja
+export default Testnastranica

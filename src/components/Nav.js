@@ -56,9 +56,9 @@ const Nav = () => {
             <li className="nav-item dropdown text-end">
               <Link className="nav-link dropdown-toggle" to="#!" id="ddElectric" role="button" data-bs-toggle="dropdown" aria-expanded="false">Usluge</ Link>
                 <ul className="dropdown-menu" aria-labelledby="ddElectric">
-                  <li><Link className="dropdown-item text-end" to="/vjencanja">Vjenčanja</Link>
+                  <li><Link className="dropdown-item text-end" to="/usluga/vjencanja">Vjenčanja</Link>
                   </li>
-                  <li><Link className="dropdown-item text-end" to="">Privatni eventi</Link>
+                  <li><Link className="dropdown-item text-end" to="/usluga/privatni-eventi">Privatni eventi</Link>
                   </li>
                 </ul>
             </li>
@@ -70,6 +70,9 @@ const Nav = () => {
             </li>
             <li className="nav-item">
               <Link className="nav-link text-end" to="/kontakt">Kontakt</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link text-end" to="/testnastranica">Testnastranica</Link>
             </li>
             
           </ul>
