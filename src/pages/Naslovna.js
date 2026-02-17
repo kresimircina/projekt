@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
+import FeaturedImg from "../components/FeaturedImg";
 
 
 const Naslovna = () => {
@@ -8,7 +9,7 @@ const Naslovna = () => {
         useEffect(() => {
             const fetchPage = async() => {
                 try{
-                    const response = await fetch('https://front2.edukacija.online/backend/wp-json/wp/v2/pages/178');
+                    const response = await fetch('https://front2.edukacija.online/backend/wp-json/wp/v2/pages/178?_embed');
                     if(!response.ok){
                         throw new Error("Ne mogu povući podatke");
                     }
@@ -27,8 +28,12 @@ const Naslovna = () => {
     if(!page) return <p>Učitavanje</p>;
 
     return (
+        <>
+            <FeaturedImg page={page}/>
+            <div dangerouslySetInnerHTML={{ __html:page.content.rendered }} />
+        </>
 
-    <div dangerouslySetInnerHTML={{ __html:page.content.rendered }}></div>
+    
   );
 };
 
