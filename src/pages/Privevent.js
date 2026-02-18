@@ -4,7 +4,7 @@ import Loader from "../components/Loader";
 import posts from '../components/zadaci/data/blog.json';
 import "./Blog.css"
 
-
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 const Privevent = () => {
 
@@ -16,7 +16,7 @@ const Privevent = () => {
         setLoading(true);
     
         
-            fetch('https://front2.edukacija.online/backend/wp-json/wp/v2/eventi?_embed')
+            fetch(`${BASE_URL}v2/eventi?_embed`)
             .then(response => response.json())
             .then(
                 (data) => {

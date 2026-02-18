@@ -74,7 +74,15 @@ const Nav = () => {
             <li className="nav-item">
               <Link className="nav-link text-end" to="/testnastranica">Testnastranica</Link>
             </li>
-            
+            {name ? (
+              <li className="nav-item">
+                <Link className="nav-link text-end" to="/admin">
+                  Admin
+                </Link>
+              </li>
+            ) : (
+              ""
+            )}
           </ul>
 
           <ul className="navbar-nav ms-auto align-items-center">

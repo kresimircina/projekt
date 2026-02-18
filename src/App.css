@@ -4,6 +4,7 @@
   --primary-color: #141615;
   --white: #fff;
   --black: #000;
+  --naslovna: #a3b9c9;
 }
 .pagination {
   --bs-pagination-active-color: #fff;
@@ -49,6 +50,12 @@ a {
     background-position: center;
     min-width: 100%;
     min-height: 100vh;
+}
+
+.hero_img {
+    width: 100%;
+    height: calc(100vh - 70px);
+    object-fit: cover;
 }
 
 .hero-products {

@@ -18,10 +18,16 @@ import SignIn from "./pages/SignIn";
 import Register from "./pages/Register";
 import Testnastranica from "./pages/Testnastranica";
 
+import MyDetails from "./pages/admin/MyDetails";
+import MyPosts from "./pages/admin/MyPosts";
+import Settings from "./pages/admin/Settings";
+
 import Profil from "./components/zadaci/Profil";
 import Korisnici from "./components/zadaci/Korisnici"
 import Vjezba from "./components/zadaci/Vjezba"
 import Tecaj from "./components/zadaci/Tecaj"
+
+import AdminLayout from "./pages/admin/AdminLayout";
                    
 function App() {
   return (
@@ -43,7 +49,11 @@ function App() {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/register" element={<Register />} />
 
-
+        <Route path="/admin" element={<AdminLayout />}> 
+          <Route path="mydetails" element={<MyDetails />} />
+          <Route path="myposts" element={<MyPosts />} />
+          <Route path="settings" element={<Settings />} />
+        </Route>
 
 
 

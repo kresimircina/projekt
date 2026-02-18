@@ -6,7 +6,7 @@ import Loader from "../components/Loader";
 
 import "./Blog.css"
 
-
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 const Usluge = () => {
 
@@ -20,7 +20,7 @@ const Usluge = () => {
         setLoading(true);
     
         
-            fetch('https://front2.edukacija.online/backend/wp-json/wp/v2/eventi')
+            fetch(`${BASE_URL}v2/eventi`)
             .then(response => response.json())
             .then(
                 (data) => {
@@ -35,7 +35,7 @@ const Usluge = () => {
         setLoading(true);
     
         
-            let url = 'https://front2.edukacija.online/backend/wp-json/wp/v2/eventi?_embed';
+            let url =`${BASE_URL}v2/eventi?_embed`;
 
             if(selectedEvent) url +="&eventi" + selectedEvent;
             

@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react';
 
 import './Blog.css';
 import { useParams } from 'react-router-dom';
+import Autor from '../components/Autor';
 
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 const BlogSingle = () => {
     const {slug} = useParams();
@@ -11,7 +13,7 @@ const BlogSingle = () => {
 
     useEffect (
         () => {
-            fetch(`https://front2.edukacija.online/backend/wp-json/wp/v2/posts?slug=${slug}&_embed`)
+            fetch (`${BASE_URL}/v2/posts?slug=${slug}&_embed`)
             .then(response => response.json())
             .then(
                 (data) => {
@@ -37,12 +39,7 @@ const BlogSingle = () => {
                         <div class="post-heading">
                             <h1>{post.title.rendered}</h1>
                         
-                            <span class="meta">
-                                Autor:
-                                <a href="#!">{post._embedded.author[0].name}</a>,
-                                {new Date (post.date).toLocaleDateString("hr-HR")}
-                              
-                            </span>
+                            <Autor post={post}/>
                         </div>
                     </div>
                 </div>

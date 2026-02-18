@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import './Blog.css';
 import { useParams } from 'react-router-dom';
 
+const BASE_URL = process.env.REACT_APP_API_URL;
+
 
 const Uslugesingle = () => {
     const {slug} = useParams();
@@ -11,7 +13,7 @@ const Uslugesingle = () => {
 
     useEffect (
         () => {
-            fetch(`https://front2.edukacija.online/backend/wp-json/wp/v2/eventi?slug=${slug}&_embed`)
+            fetch (`${BASE_URL}v2/eventi?slug=${slug}&_embed`)
             .then(response => response.json())
             .then(
                 (data) => {

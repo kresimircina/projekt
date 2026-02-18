@@ -8,6 +8,7 @@ import "./kontakt.css"
 import { faInstagram, faLinkedin, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 
 
+
 const Kontakt = () => {
 
   const form = useRef();

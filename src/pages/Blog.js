@@ -5,7 +5,10 @@ import ReactPaginate from 'react-paginate';
 
 import "./Blog.css"
 import ScrollToTop from '../components/ScrollToTop';
+import BlogPost from '../components/BlogPost';
+import SwiperComponent from '../components/SwiperComponent';
 
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 
 const Blog = () => {
@@ -24,16 +27,16 @@ const Blog = () => {
     useEffect (() => {
       setLoading(true);
       
-      fetch(
-        "https://front2.edukacija.online/backend/wp-json/wp/v2/users?per_page=20"
-        )
+      fetch
+        ( `${BASE_URL}v2/users?per_page=20`)
+        
         .then((response) => response.json())
         .then((data) => {
            setAuthors(data);
         
       });
 
-      fetch("https://front2.edukacija.online/backend/wp-json/wp/v2/categories")
+      fetch (`${BASE_URL}v2/categories`)
       .then(response => response.json())
       .then((data) => {
         setCategories(data);
@@ -55,7 +58,7 @@ const Blog = () => {
             const per_page=6
     
         
-            let url = `https://front2.edukacija.online/backend/wp-json/wp/v2/posts?_embed&per_page=${per_page}&page=${currentPage+1}`;
+            let url = `${BASE_URL}v2/posts?_embed&per_page=${per_page}&page=${currentPage+1}`;
 
             if(selectedCategory) url +="&categories=1" + selectedCategory;
             if(selectedAuthor) url +="&author=" + selectedAuthor;
@@ -89,6 +92,7 @@ const Blog = () => {
       <div className="blog-page">
         <div className="container">
           <h1>Blog</h1>
+          <SwiperComponent posts={posts}/>
 
           <div className='row'>
             <div className='col-12 d-flex gap-1 mb-2'>
@@ -117,34 +121,9 @@ const Blog = () => {
             </select>
           <div className="row">
             {posts.map((post) => {
-              const image =
-                post._embedded?.["wp:featuredmedia"]?.[0]?.media_details?.sizes
-                  ?.full?.source_url;
+              
               return (
-                <div key={post.id} className="col-md-4 mb-4 blog-post">
-                  {image && (
-                    <Link to={'/blog/' + post.slug}>
-                  <img
-                      src={image}
-                      className="mb-3"
-                      alt={post.title.rendered}
-                    />
-                    </Link>
-                  )}
-                  <Link to={'/blog/' + post.slug}>
-                    <h2>{post.title.rendered}</h2>
-                  </Link>
-                  <div
-                    dangerouslySetInnerHTML={{__html: post.excerpt.rendered }}
-                  />
-                  <p>
-                    {post._embedded?.author?.[0]?.name}|{" "}
-                    {new Date(post.date).toLocaleDateString("hr-HR", {
-                      hour: "2-digit",
-                      minute: "2-digit",
-                    })}
-                  </p>
-                </div>
+                <BlogPost key={post.id} post={post} />
               );
             })}
           </div>
