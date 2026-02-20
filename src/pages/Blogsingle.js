@@ -13,7 +13,7 @@ const BlogSingle = () => {
 
     useEffect (
         () => {
-            fetch (`${BASE_URL}/v2/posts?slug=${slug}&_embed`)
+            fetch (`${BASE_URL}v2/posts?slug=${slug}&_embed`)
             .then(response => response.json())
             .then(
                 (data) => {
@@ -39,7 +39,7 @@ const BlogSingle = () => {
                         <div class="post-heading">
                             <h1>{post.title.rendered}</h1>
                         
-                            <Autor post={post}/>
+                            <Autor post={post} autor={false}/>
                         </div>
                     </div>
                 </div>

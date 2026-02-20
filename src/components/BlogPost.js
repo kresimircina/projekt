@@ -23,7 +23,7 @@ const BlogPost = ({post}) => {
                   <div
                     dangerouslySetInnerHTML={{__html: post.excerpt.rendered }}
                   />
-                   <Autor post={post}/>
+                   <Autor post={post} autor={false}/>
                 </div>
   );
 };
