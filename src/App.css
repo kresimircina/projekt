@@ -19,6 +19,10 @@
     box-shadow: 0 0 0 0.25rem rgba(124, 124, 124, 0.25);
 }
 
+.hero_section {
+  height: 80vh;
+}
+
 
 body {
     font-family: "Questrial", sans-serif;

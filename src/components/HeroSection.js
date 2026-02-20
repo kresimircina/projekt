@@ -1,7 +1,9 @@
 const HeroSection = ({ stranica, fallback, size="full" }) => {
+
   const selectedImg =
     stranica?._embedded["wp:featuredmedia"]?.[0]?.media_details.sizes?.[size]
       .source_url || fallback;
+
   return (
     <>
       <div 
@@ -9,10 +11,11 @@ const HeroSection = ({ stranica, fallback, size="full" }) => {
       style={{backgroundImage: `url(${selectedImg})`}}
       >
         <h1 className="text-center">
-          {stranica?.acf?.naslov_ic || "Naslov nije dostupan"}
+          {stranica?.acf?.naslov || "Naslov nije dostupan"}
         </h1>
       </div>
     </>
   );
 };
+
 export default HeroSection;
