@@ -28,6 +28,8 @@ import Vjezba from "./components/zadaci/Vjezba"
 import Tecaj from "./components/zadaci/Tecaj"
 
 import AdminLayout from "./pages/admin/AdminLayout";
+import Autoripopis from "./pages/Autoripopis";
+import Autorsingle from "./pages/Autorsingle";
                    
 function App() {
   return (
@@ -54,6 +56,9 @@ function App() {
           <Route path="myposts" element={<MyPosts />} />
           <Route path="settings" element={<Settings />} />
         </Route>
+
+        <Route path="/autori" element={<Autoripopis />} />
+        <Route path="/autor/:nickname" element={<Autorsingle />} />
 
 
 

@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     const fetchPage = async() => {
       try{
-        const response = await fetch(`${BASE_URL}v2/pages/178?_embed`);
+        const response = await fetch(BASE_URL + 'v2/pages/178?_embed');
         if(!response.ok){
           throw new Error('Ne mogu povući podatke');
         }
@@ -33,7 +33,7 @@ const Home = () => {
       fallback="https://placehold.co/600x400" 
       size="full" 
       />
-      {<FeaturedImg page={page} fallback="https://placehold.co/600x400" size="full"  />}
+      {/*<FeaturedImg page={page} fallback="https://placehold.co/600x400" size="full"  /*/}
       <div dangerouslySetInnerHTML={{ __html:page.content.rendered }} />
     </>
   );

@@ -27,8 +27,8 @@ const Blog = () => {
     useEffect (() => {
       setLoading(true);
       
-      fetch
-        ( `${BASE_URL}v2/users?per_page=20`)
+      fetch(
+        `${BASE_URL}v2/users?per_page=20`)
         
         .then((response) => response.json())
         .then((data) => {
@@ -56,9 +56,9 @@ const Blog = () => {
         setLoading(true);
 
             const per_page=6
-    
+  
         
-            let url = `${BASE_URL}v2/posts?_embed&per_page=${per_page}&page=${currentPage+1}`;
+             let url = `${BASE_URL}v2/posts?_embed&per_page=${per_page}&page=${currentPage + 1}`; 
 
             if(selectedCategory) url +="&categories=1" + selectedCategory;
             if(selectedAuthor) url +="&author=" + selectedAuthor;
