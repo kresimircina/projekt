@@ -103,6 +103,8 @@ const Nav = () => {
                 <img src="./img/cart-wrap.svg" alt="Cart" className="icon-lg "/>
               </Link>
             </li>
+
+           
           </ul>
       
         </div>
