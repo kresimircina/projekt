@@ -17,6 +17,9 @@ import Kategorije from "./pages/Kategorije";
 import SignIn from "./pages/SignIn";
 import Register from "./pages/Register";
 import Testnastranica from "./pages/Testnastranica";
+import Shop from "./pages/shop/Shop";
+import Cart from "./pages/shop/Cart";
+import Checkout from "./pages/shop/Checkout";
 
 import MyDetails from "./pages/admin/MyDetails";
 import MyPosts from "./pages/admin/MyPosts";
@@ -56,6 +59,9 @@ function App() {
           <Route path="myposts" element={<MyPosts />} />
           <Route path="settings" element={<Settings />} />
         </Route>
+         <Route path="/shop" element={<Shop />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
 
         <Route path="/autori" element={<Autoripopis />} />
         <Route path="/autor/:nickname" element={<Autorsingle />} />
